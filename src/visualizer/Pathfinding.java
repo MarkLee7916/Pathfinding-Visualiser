@@ -33,8 +33,8 @@ public class Pathfinding extends Observable {
 		updateType = UpdateType.EXPLORING;
 	}
 
-	// A* pathfinding based on a simple co-ordinate heuristic
-	public void AStar(Position start, Position goal) {
+	// Heuristic based search algorithm
+	public void bestFirstSearch(Position start, Position goal) {
 		Queue<Position> positions = new PriorityQueue<>(Arrays.asList(start));
 		Set<Position> visited = new HashSet<>(Arrays.asList(start));
 		Position currentPos;
