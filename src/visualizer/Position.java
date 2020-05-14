@@ -4,8 +4,7 @@ public class Position implements Comparable<Position> {
 	private final int row;
 
 	private final int column;
-
-	// Value that A* bases it's order of precedence on
+	
 	private int heuristicValue;
 
 	// Pointer to next position in path
