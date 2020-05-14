@@ -32,7 +32,7 @@ public class Controller implements Observer {
 	}
 
 	public void run() {
-		pathfinding.AStar(start, goal);
+		pathfinding.bestFirstSearch(start, goal);
 	}
 
 	@Override
